@@ -1,0 +1,254 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #f8f8f8;
+}
+
+header {
+    height: 60px;
+    width: 100%;
+    background-color: rgb(52, 51, 51);
+    color: white;
+    display: flex;
+    align-items: center;
+    position: fixed;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-list {
+    display: none;
+
+}
+
+nav ul li {
+    list-style: none;
+    display: inline;
+    margin: 14px;
+    font-weight: bold;
+    padding: 13px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 5px;
+    background-color: rgb(255, 0, 79);
+    cursor: pointer;
+}
+
+nav ul li:hover {
+    background-color: white;
+    color: rgb(255, 0, 79);
+    transition: 1s;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: 500;
+    letter-spacing: 4px;
+    cursor: pointer;
+}
+.logo span{
+    transition:  0.5s;
+}
+.logo:hover span:nth-child(1){
+
+   margin-left: 20px;
+}
+.logo:hover span:nth-child(2){
+    margin-right:8px;
+ }
+.logo:hover span
+{
+  color: #fff; 
+  text-shadow: 0 0 10px #fff,
+               0 0 20px #fff,
+               0 0 40px #fff,
+               0 0 80px #fff,
+               0 0 120px #fff,
+               0 0 160px #fff;
+}
+
+.bottom {
+    width: 100%;
+    height: auto;
+    background: url(Assests/pexels-lukas-616358.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 140px 0;
+    margin-bottom: 15px;
+}
+
+.bottom h2 {
+    color: black;    
+    font-size: 40px;
+    margin-bottom: 30px;
+    font-family: cursive;
+    font-weight: 590;
+    letter-spacing: 2px;
+}
+
+.bottom p {
+    color: black;
+    font-size: 25px;
+    margin-bottom: 40px;
+}
+
+.serchbox {
+    width: 50%;
+    margin: 30px auto;
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+}
+
+.serchbox input {
+    text-align: center;
+    width: 70%;
+    padding: 10px;
+    outline: none;
+    border: 0;
+    border-radius: 5px 0 0 5px;
+    font-size: 1rem;
+}
+
+.serchbox button {
+    padding: 10px 20px;
+    outline: none;
+    border: none;
+    border-radius: 0px 5px 5px 0px;
+    font-size: 1rem;
+    font-weight: 530;
+    cursor: pointer;
+    background-color:  rgb(23, 29, 35);;
+    color: #fff;
+}
+
+.serchbox button:hover{
+    background-color: rgb(255, 0, 79);
+    color: white;
+    transition: 1s;
+}
+
+.recipes {
+    padding: 47px 0;
+}
+
+.recipes h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+
+.recipe-section {
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    column-gap: 10px;
+}
+
+.recipe-cards {
+    background: rgb(243, 225, 225);
+    margin: 25px 30px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(56, 27, 27, 0.1);
+}
+
+.recipe-cards img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.recipe-cards h2 {
+    font-size: 20px;
+    padding: 25px;
+}
+
+.recipe-cards p {
+    font-size: 15px;
+    padding: 20px;
+  font-family:sans-serif; 
+}
+
+.recipe-cards a {
+    font-size: 17px;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    background: rgb(255, 0, 79);
+    color: #fff;
+    padding: 15px;
+    cursor: pointer;
+}
+.recipe-cards a:hover {
+    background-color: rgb(255, 163, 163);
+    color: rgb(37, 21, 21);
+    transition: 1s;
+}
+footer {
+    background: #867b7b;
+    padding: 20px;
+    color: black;
+    text-align: center;
+}
+
+.menu-icon {
+    font-size: 24px;
+    padding: 20px;
+    text-align: right;
+    cursor: pointer;
+    display: block;
+}
+
+@media only screen and (min-width: 768px) {
+
+   
+    
+    .menu-icon {
+        display: none;
+    }
+
+    .nav-list {
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+     
+    .bottom{
+        background-position: left;
+    }
+
+    .bottom h2 {
+        font-size: 28px;
+    }
+
+    .bottom p {
+        font-size: 15px;
+    }
+
+    .serchbox {
+        width: 90%;
+        margin: 30px auto;
+    }
+}
